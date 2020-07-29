@@ -1,13 +1,14 @@
+//
+// Created by Semen Sereda on 28.07.2020.
+//
 ///Это генерация перестановок или по другому:
 ///выборка без повторений элементов
 ///асимптотика O(N!)
-#include <fstream>
+
 #include <vector>
+#include <iostream>
 
 using namespace std;
-
-ifstream cin("input.txt");
-ofstream cout("output.txt");
 
 int n;
 vector<int> a;

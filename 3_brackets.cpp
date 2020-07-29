@@ -1,3 +1,9 @@
+//
+// Created by Semen Sereda on 28.07.2020.
+//
+
+///Это проверка скобочного выражение на верность
+
 #include <iostream>
 #include <string>
 

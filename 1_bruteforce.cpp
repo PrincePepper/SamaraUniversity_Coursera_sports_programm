@@ -1,13 +1,16 @@
+//
+// Created by Semen Sereda on 28.07.2020.
+//
 ///Перебор всех возможных комбинаций чисел от 1 до M размером N
 ///Используется рекурсивный способ функции rec()
 ///асимптотика O(N*M)
-#include <fstream>
+#include <iostream>
 #include <vector>
 
 using namespace std;
 
-ifstream cin("input.txt");
-ofstream cout("output.txt");
+
+
 
 int n, m;
 vector<int> a;
