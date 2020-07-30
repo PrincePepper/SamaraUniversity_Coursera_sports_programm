@@ -44,9 +44,10 @@ void order(int n) {
 
 vector<char> s;
 int n;
-char a_1[2]={'(','['};
-char a_2[2]={')',']'};
-void rec(int idx=0, int bal=0,int k=0) {
+char a_1[2] = {'(', '['};
+char a_2[2] = {')', ']'};
+
+void rec(int idx = 0, int bal = 0, int k = 0) {
     if (idx == 2 * n) {
         if (bal == 0) {
             for (int i = 0; i < idx; i++)
@@ -56,17 +57,17 @@ void rec(int idx=0, int bal=0,int k=0) {
         return;
     }
     s[idx] = a_1[k];
-    rec(idx + 1, bal + 1,k);
-    if (bal == 0){
-        k=k%1;
+    rec(idx + 1, bal + 1, k);
+    if (bal == 0) {
+        return;
     }
     s[idx] = a_2[k];
-    rec(idx + 1, bal - 1,k);
+    rec(idx + 1, bal - 1, k);
 }
 
 int main() {
     cin >> n;
-    s = vector<char>(n*2);
+    s = vector<char>(n * 2);
     rec();
     /// ИЛИ
     cout << endl;
